@@ -22,7 +22,7 @@ class MovieList extends Component {
             <div>
                 <h1>Movie List</h1>
                 {
-                    movies.map(item => <MovieItem data={item}/>)
+                    movies.map(item => <MovieItem data={item} key={item.id}/>)
                 }
             </div>
         );
